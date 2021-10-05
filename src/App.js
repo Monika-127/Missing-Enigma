@@ -30,13 +30,13 @@ import GetSeller from './Components/Admin_Module/GetSeller';
 import GetTotalOrders from './Components/Admin_Module/GetTotalOrders';
 import HomeComp from './Components/Home/HomeComp';
 const firebaseConfig = {
-  apiKey: "AIzaSyA1jzxYWJy-QV-7ihr91ZsrVBUb1HqxHvA",
-  authDomain: "missingenigma-fd8c0.firebaseapp.com",
-  projectId: "missingenigma-fd8c0",
-  storageBucket: "missingenigma-fd8c0.appspot.com",
-  messagingSenderId: "145996697946",
-  appId: "1:145996697946:web:e86e64787bdb3717bf2363",
-  measurementId: "G-CLVPET2GRS"
+  apiKey: "AIzaSyBdUUhgtYyu_XXNnBwyCarRku2aOuS3F6Y",
+  authDomain: "missing-enigma-final.firebaseapp.com",
+  projectId: "missing-enigma-final",
+  storageBucket: "missing-enigma-final.appspot.com",
+  messagingSenderId: "296510192167",
+  appId: "1:296510192167:web:c194aee1a7465304b9ac02",
+  measurementId: "G-BRL5QFW18M"
 };
 initializeApp(firebaseConfig);
 
