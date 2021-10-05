@@ -28,6 +28,7 @@ import { Admin } from './Components/Admin';
 import GetOrder from './Components/Admin_Module/GetOrder';
 import GetSeller from './Components/Admin_Module/GetSeller';
 import GetTotalOrders from './Components/Admin_Module/GetTotalOrders';
+import HomeComp from './Components/Home/HomeComp';
 const firebaseConfig = {
   apiKey: "AIzaSyA1jzxYWJy-QV-7ihr91ZsrVBUb1HqxHvA",
   authDomain: "missingenigma-fd8c0.firebaseapp.com",
@@ -115,7 +116,8 @@ function App() {
               <Header/>
               <Sell/>
             </Route>
-            <Route path="/">
+            <Route path="/" component={HomeComp}>
+
               <Layout/>
             </Route>
           </Switch>
