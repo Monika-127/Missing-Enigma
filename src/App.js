@@ -23,7 +23,11 @@ import {Order} from './Components/Order'
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import {useEffect} from 'react';
 import { useStateValue } from './Components/StateProvider';
+import {GetCustomer} from './Components/Admin_Module/GetCustomer';
 import { Admin } from './Components/Admin';
+import GetOrder from './Components/Admin_Module/GetOrder';
+import GetSeller from './Components/Admin_Module/GetSeller';
+import GetTotalOrders from './Components/Admin_Module/GetTotalOrders';
 const firebaseConfig = {
   apiKey: "AIzaSyA1jzxYWJy-QV-7ihr91ZsrVBUb1HqxHvA",
   authDomain: "missingenigma-fd8c0.firebaseapp.com",
@@ -78,6 +82,22 @@ function App() {
             <Route path="/login" component={Login}>
             </Route>
             <Route path="/signup" component={Signup}/>
+            <Route path="/GetCustomer" component={GetCustomer}>
+            <Header/>           
+            <GetCustomer/>
+            </Route>
+            <Route path="/GetOrder" component={GetOrder}>
+            <Header/>           
+            <GetOrder/>
+            </Route>
+            <Route path="/GetSeller" component={GetSeller}>
+            <Header/>           
+            <GetSeller/>
+            </Route>
+            <Route path="/GetTotalOrders" component={GetTotalOrders}>
+            <Header/>           
+            <GetTotalOrders/>
+            </Route>
             <Route path="/Admin" component={Admin}>
               <Header/>
               <Admin/>
